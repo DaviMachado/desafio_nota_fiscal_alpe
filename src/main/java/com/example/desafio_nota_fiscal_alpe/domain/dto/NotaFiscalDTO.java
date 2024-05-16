@@ -10,6 +10,8 @@ import lombok.Setter;
 public class NotaFiscalDTO {
 
 	private Long id;
-	private String texto;
+	private Long numero;
+	private String formaPagamento;
+	private String nomeCliente;
 	
 }

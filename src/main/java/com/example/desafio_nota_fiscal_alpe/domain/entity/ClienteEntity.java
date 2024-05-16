@@ -1,14 +1,14 @@
 package com.example.desafio_nota_fiscal_alpe.domain.entity;
 
-import java.time.LocalDateTime;
+import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,25 +18,21 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "NOTA_FISCAL")
-public class NotaFiscalEntity {
+@Table(name = "CLIENTE")
+public class ClienteEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID")
 	private Long id;
 	
-	@Column(name = "NUMERO_NOTA")
-	private Long numero;
+	@Column(name = "NOME")
+	private String nome;
 	
-	@Column(name = "DATA_NOTA")
-	private LocalDateTime data;
+	@Column(name = "CPF")
+	private String cpf;
 	
-	@Column(name = "FORMA_PAGAMENTO")
-	private String formaPagamento;
-	
-	@ManyToOne
-    @JoinColumn(name = "CLIENTE_ID")
-    private ClienteEntity cliente;
+	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    private List<NotaFiscalEntity> notasFiscais;
 
 }
