@@ -19,8 +19,8 @@ public class OrgaoGovernoService {
 			//
 			log.info("Nota Fiscal validada com sucesso no Orgão do Governo !!");
 		} catch (Exception e) {
-			new NotaFiscalInvalidaException("Nota Fiscal invalida no Orgão do Governo !!", HttpStatus.BAD_REQUEST);
 			log.error("Nota Fiscal invalida no Orgão do Governo !!");
+			throw new NotaFiscalInvalidaException("Nota Fiscal invalida no Orgão do Governo !!", HttpStatus.BAD_REQUEST);
 		}
 	}
 	

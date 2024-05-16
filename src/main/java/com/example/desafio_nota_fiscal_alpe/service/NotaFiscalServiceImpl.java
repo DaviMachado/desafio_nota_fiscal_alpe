@@ -42,10 +42,9 @@ public class NotaFiscalServiceImpl implements INotaFiscalService {
 			
 			return notaFiscalUtils.entityToDto(novaNotaFiscal);
 		} catch (Exception e) {
-			new NotaFiscalErrorException("Erro ao salvar um nova Nota Fiscal !!", HttpStatus.BAD_REQUEST);
 			log.error("Erro ao salvar um nova Nota Fiscal !!");
+			throw new NotaFiscalErrorException("Erro ao salvar um nova Nota Fiscal !!", HttpStatus.BAD_REQUEST);
 		}
-		return null;
 	}
 
 	@Override

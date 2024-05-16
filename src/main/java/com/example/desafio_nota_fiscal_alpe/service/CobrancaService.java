@@ -19,8 +19,8 @@ public class CobrancaService {
 			//
 			log.info("Nota Fiscal enviada para o MS de Cobrança com sucesso !!");
 		} catch (Exception e) {
-			new NotaFiscalInvalidaException("Erro ao enviar a Nota Fiscal ao MS de Cobrança !!", HttpStatus.BAD_REQUEST);
 			log.error("Erro ao enviar a Nota Fiscal ao MS de Cobrança !!");
+			throw new NotaFiscalInvalidaException("Erro ao enviar a Nota Fiscal ao MS de Cobrança !!", HttpStatus.BAD_REQUEST);
 		}
 	}
 	
