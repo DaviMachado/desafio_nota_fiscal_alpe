@@ -1,0 +1,20 @@
+server:
+  port: 3030
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: desafio_nota_fiscal_alpe
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true
+    username: sa
+    password: 1q2w3e4r@#$
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: none
