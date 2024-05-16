@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ca22ee48-880f-4a29-863c-34aea80a913f",
+		"name": "Desafio Alpe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27613187"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Listar Nota Fiscal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3030/api/listar-notas-fiscais",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"listar-notas-fiscais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Nota Fiscal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero\": \"123456789\",\r\n    \"formaPagamento\": \"Boleto\",\r\n    \"cliente\":{\r\n        \"cpf\": \"82272683070\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3030/api/salvar-nota-fiscal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"salvar-nota-fiscal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
