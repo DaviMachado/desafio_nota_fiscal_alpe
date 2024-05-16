@@ -18,3 +18,8 @@ spring:
     properties:
       hibernate:
         ddl-auto: none
+        
+topicos:
+  pagamento:
+    request:
+      topic: "pagamento.request.topic.v1"
