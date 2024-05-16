@@ -20,6 +20,7 @@ spring:
         ddl-auto: none
         
 topicos:
-  pagamento:
-    request:
-      topic: "pagamento.request.topic.v1"
+  orgao-governo:
+    topic: "orgao-governo.topic.v1"
+  cobranca-service:
+    topic: "cobranca-service.topic.v1"

@@ -15,13 +15,16 @@ import org.springframework.kafka.core.ProducerFactory;
 
 
 @Configuration
-public class ProdutorKafkaConfig {
+public class KafkaConfig {
 
     @Autowired
     private KafkaProperties kafkaProperties;
-
-    @Value("${topicos.pagamento.request.topic}")
-    private String pagamentoRequestTopic;
+    
+    @Value("${topicos.orgao-governo.topic}")
+    private String orgaoGovernoTopic;
+    
+    @Value("${topicos.cobranca-service.topic}")
+    private String cobrancaServiceTopic;
 
     @Bean
     public ProducerFactory<String, String> producerFactory() {
@@ -35,9 +38,18 @@ public class ProdutorKafkaConfig {
     }
 
     @Bean
-    public NewTopic pagamentoRequestTopicBuilder() {
+    public NewTopic orgaoGovernoTopicBuilder() {
         return TopicBuilder
-            .name(pagamentoRequestTopic)
+            .name(orgaoGovernoTopic)
+            .partitions(1)
+            .replicas(1)
+            .build();
+    }
+    
+    @Bean
+    public NewTopic cobrancaServiceTopicBuilder() {
+        return TopicBuilder
+            .name(cobrancaServiceTopic)
             .partitions(1)
             .replicas(1)
             .build();
