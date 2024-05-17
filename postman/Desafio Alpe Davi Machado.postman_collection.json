@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "ca22ee48-880f-4a29-863c-34aea80a913f",
+		"name": "Desafio Alpe Davi Machado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27613187"
+	},
+	"item": [
+		{
+			"name": "alpe",
+			"item": [
+				{
+					"name": "Listar Nota Fiscal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNTk2NzI1NX0.en_1kNdFCz7VbNy85iqgKvyY_IRM2Ai0D_jPA68PtZ1wwquP1pHYy9pMLCaiojYa3GSgPiw-YtDt2DNhmfnVZg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3030/alpe/nota-fiscal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"alpe",
+								"nota-fiscal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Nota Fiscal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNTk2NzI1NX0.en_1kNdFCz7VbNy85iqgKvyY_IRM2Ai0D_jPA68PtZ1wwquP1pHYy9pMLCaiojYa3GSgPiw-YtDt2DNhmfnVZg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero\": \"123456789\",\r\n    \"formaPagamento\": \"Boleto\",\r\n    \"cliente\":{\r\n        \"cpf\": \"82272683070\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3030/alpe/nota-fiscal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"alpe",
+								"nota-fiscal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"davi@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3030/alpe/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"alpe",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
