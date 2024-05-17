@@ -1,7 +1,7 @@
 server:
   port: 3030
   servlet:
-    context-path: /api
+    context-path: /alpe
 
 spring:
   application:
