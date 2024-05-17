@@ -34,5 +34,11 @@ public class ClienteEntity {
 	
 	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<NotaFiscalEntity> notasFiscais;
+	
+	@Column(name = "EMAIL")
+	private String email;
+	
+	@Column(name = "SENHA")
+	private String senha;
 
 }

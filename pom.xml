@@ -62,6 +62,36 @@
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 		</dependency>
+		
+		<!-- /////////////////////////////////////////////-->
+		<!-- permite trabalhar com autenticação no Spring-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- vai gerenciar nossos JWTs-->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.7.0</version>
+		</dependency>
+		
+		<!-- /////////////////////////////////////////////-->
+		<!-- erro: javax.xml.bind.datatypeconverter-->
+		<!-- Isso ocorre se você estiver usando uma versão superiro ao JAVA 9-->
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+		<!-- -->
+		
+		<dependency>
+        	<groupId>org.glassfish.jaxb</groupId>
+        	<artifactId>jaxb-runtime</artifactId>
+        	<version>3.0.2</version>
+    	</dependency>
 	</dependencies>
 
 	<build>

@@ -11,5 +11,7 @@ import com.example.desafio_nota_fiscal_alpe.domain.entity.ClienteEntity;
 public interface ClienteRepository extends JpaRepository<ClienteEntity, Long> {
 	
 	Optional<ClienteEntity> findByCpf(String cpf);
+	
+	ClienteEntity findByEmail(String email);
 
 }
