@@ -16,13 +16,11 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.annotation.DirtiesContext;
 
 import com.example.desafio_nota_fiscal_alpe.domain.dto.NotaFiscalDTO;
 import com.example.desafio_nota_fiscal_alpe.domain.entity.ClienteEntity;
 import com.example.desafio_nota_fiscal_alpe.domain.vo.NotaFiscalVO;
 
-@DirtiesContext
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("Nota Fiscal Controller")
 @SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
