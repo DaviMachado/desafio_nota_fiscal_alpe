@@ -20,9 +20,6 @@ public class KafkaConfig {
     @Autowired
     private KafkaProperties kafkaProperties;
     
-    @Value("${topicos.orgao-governo.topic}")
-    private String orgaoGovernoTopic;
-    
     @Value("${topicos.cobranca-service.topic}")
     private String cobrancaServiceTopic;
 
@@ -35,15 +32,6 @@ public class KafkaConfig {
     @Bean
     public KafkaTemplate<String, String> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
-    }
-
-    @Bean
-    public NewTopic orgaoGovernoTopicBuilder() {
-        return TopicBuilder
-            .name(orgaoGovernoTopic)
-            .partitions(1)
-            .replicas(1)
-            .build();
     }
     
     @Bean
