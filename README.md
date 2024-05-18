@@ -67,6 +67,6 @@ ___
 ![solucao2](./img_readme/solucao2.jpg) 
 ___
 ___
-## SOLUÇÂO 3: XML (**Não Implementado**)
+## SOLUÇÂO 3: S3 (**Não Implementado**)
 
 ![solucao3](./img_readme/solucao3.jpg) 
