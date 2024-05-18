@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" modified="2024-05-18T16:50:08.237Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="BIhJnDxWzAre-LOzW2QD" version="24.4.4" type="google">
+  <diagram name="Página-1" id="OaUqgFNRiwdwHjIo_Jgl">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GPmFs9mXc59LgkzCujxu-1" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="35" y="100" width="20" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-2" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="160" y="100" width="50" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-3" value="Endppint" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="70" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-4" value="ERP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-5" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="270" y="100" width="40" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-6" value="Controller" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="70" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-7" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="40" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-8" value="NotaFiscalServiceImpl" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="70" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-9" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" vertex="1" parent="1">
+          <mxGeometry x="640" y="100" width="40" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-10" value="OrgaoGovernoService" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="70" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-11" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" vertex="1" parent="1">
+          <mxGeometry x="850" y="100" width="40" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-12" value="CobrancaService" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="810" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-13" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="100" width="40" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-14" value="NotalFiscalRepository" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="970" y="70" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-15" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="GPmFs9mXc59LgkzCujxu-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="80" y="170" as="sourcePoint" />
+            <mxPoint x="180" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-16" value="Dados Nota Fiscal" style="text;html=1;align=right;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="148" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-19" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="190" y="260" as="sourcePoint" />
+            <mxPoint x="290" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-20" value="POST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="GPmFs9mXc59LgkzCujxu-19">
+          <mxGeometry x="0.0519" y="8" relative="1" as="geometry">
+            <mxPoint x="-10" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-23" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="310" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-24" value="Salvar Nota Fsical" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="GPmFs9mXc59LgkzCujxu-23">
+          <mxGeometry x="-0.1125" y="3" relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-25" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="GPmFs9mXc59LgkzCujxu-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="370" as="sourcePoint" />
+            <mxPoint x="610" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-26" value="Validar Nota Fiscal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="GPmFs9mXc59LgkzCujxu-25">
+          <mxGeometry x="-0.1217" y="4" relative="1" as="geometry">
+            <mxPoint x="8" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-27" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="GPmFs9mXc59LgkzCujxu-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="580" y="410" as="sourcePoint" />
+            <mxPoint x="449.5" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-28" value="Nota Fiscal Valida" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="388" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-29" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="GPmFs9mXc59LgkzCujxu-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="560" as="sourcePoint" />
+            <mxPoint x="610" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-30" value="Tem Boleto?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="538" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="GPmFs9mXc59LgkzCujxu-13">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="660" as="sourcePoint" />
+            <mxPoint x="610" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GPmFs9mXc59LgkzCujxu-32" value="Salvar Nota Fiscal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="GPmFs9mXc59LgkzCujxu-31">
+          <mxGeometry x="-0.2129" y="2" relative="1" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
