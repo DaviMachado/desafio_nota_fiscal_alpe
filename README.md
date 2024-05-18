@@ -32,13 +32,13 @@ Nessa primeira solução, será pressupondo que seja enviado um _JSON_ para o mi
 
 ![imagem3](./img_readme/img3.png) 
 
-4. Agora será necessário subir o microserviço que foi clonado na etapa 2.
+4. Agora será necessário subir o microserviço que foi clonado na etapa 1.
 
 ![imagem4](./img_readme/img4.png)  
 
 
 5. Com o microserviço em execução, será necessario realizar o login para recuperar o token JWT, através do enpoint _http://localhost:3030/alpe/login_ 
-(o login terá que ser com o mesmo cliente que foi realizado o **INSERT** na etapa 4).
+(o login terá que ser com o mesmo cliente que foi realizado o **INSERT** na etapa 3).
 
 ![imagem5](./img_readme/img5.png) 
 
