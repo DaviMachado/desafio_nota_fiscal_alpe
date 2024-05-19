@@ -12,7 +12,7 @@ ___
 
 ## SOLUÇÂO 1: JSON (Implementado)
 
-Nessa primeira solução, será pressupondo que seja enviado um _JSON_ para o microserviço de Notas Fiscais, o mesmo será validado no orgão do Governo (_mock_), em seguida salvo na base de dados, e por fim, enviado para outro microserviço de Cobrança (_mock_) - (**OBS**: se a nota Fiscal foi paga como Boleto).
+Nessa primeira solução, será pressupondo que seja enviado um _**JSON**_ para o microserviço de Notas Fiscais, o mesmo será validado no orgão do Governo (_mock_), em seguida salvo na base de dados, e por fim, enviado para outro microserviço de Cobrança (_mock_) - (**OBS**: se a nota Fiscal for paga como Boleto).
 
 ![img_solucao1](./img_readme/solucao1.jpg) 
 
@@ -62,9 +62,26 @@ Nessa primeira solução, será pressupondo que seja enviado um _JSON_ para o mi
 
 ___
 ___
-## SOLUÇÂO 2: XML (**Não Implementado**)
+## SOLUÇÂO 2: XML (**Implementado**)
 
-![solucao2](./img_readme/solucao2.jpg) 
+
+Nessa segunda solução, será pressupondo que seja enviado um arquivo _**XML**_ para o microserviço de Notas Fiscais, o mesmo será validado no orgão do Governo (_mock_), em seguida salvo na base de dados e por fim, enviado para outro microserviço de Cobrança (_mock_) - (**OBS**: se a nota Fiscal for paga como Boleto).
+
+![solucao2](./img_readme/solucao2.jpg)
+
+
+- Passo a Passo:
+
+1. Realizar o **login** conforme explicação acima e inserir o arquivo **XML** no seguinte endpoint _http://localhost:3030/alpe/nota-fiscal/upload-xml_ (arquivo **XML** anexado dentro da pasta _"postman->xml"_ no projeto).
+
+![imagem9](./img_readme/img9.png)
+
+2. Ao executar esse endpoint _http://localhost:3030/alpe/nota-fiscal/upload-xml_, ele irá **desserializar** o arquivo **XML**, e salvar no banco de dados.
+
+![imagem10](./img_readme/img10.png)
+
+![imagem11](./img_readme/img11.png)
+
 ___
 ___
 ## SOLUÇÂO 3: S3 (**Não Implementado**)
