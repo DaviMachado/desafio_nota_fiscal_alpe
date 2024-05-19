@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NFe>
+    <infNFe>
+        <numero>123456789</numero>
+        <formaPagamento>Boleto</formaPagamento>
+        <cliente>
+		<cpf>82272683070</cpf>
+	</cliente>
+    </infNFe>
+</NFe>

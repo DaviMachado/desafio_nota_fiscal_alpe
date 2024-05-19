@@ -17,7 +17,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNTk2NzI1NX0.en_1kNdFCz7VbNy85iqgKvyY_IRM2Ai0D_jPA68PtZ1wwquP1pHYy9pMLCaiojYa3GSgPiw-YtDt2DNhmfnVZg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNTk3OTY5M30.L_TC-5QBkl8clQqS2Tw2Y0Dzjyu211ypiZeA_gqilZ71V8oQkB188SuQPB1lKWAuSgI4XOYN4cQgpX4NDkdAEg",
 									"type": "string"
 								}
 							]
@@ -47,7 +47,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNTk2NzI1NX0.en_1kNdFCz7VbNy85iqgKvyY_IRM2Ai0D_jPA68PtZ1wwquP1pHYy9pMLCaiojYa3GSgPiw-YtDt2DNhmfnVZg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNjA0MDM0Nn0.b1eP6JMT6BQ1axlMJ4ZeaNtJtxAMAzY5KOkg1oBzRaQowWg8l-a_osrJCsMrBxbVbu2dyGmpDWklO7zLQMaebg",
 									"type": "string"
 								}
 							]
@@ -102,6 +102,91 @@
 							"path": [
 								"alpe",
 								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Nota Fiscal com XML",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNjEyNzM1OX0.uqmYoGtJz-pjhPKHrrsjumrZRiCO-jKneRiZEFWL2sakjL4arVITuKAPvZc4MVFMFe6i0qTxTa0CeAFj3PSJvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Davi/Desktop/Davi - backup/Desafio Alpe/XML/nota_fiscal_teste.xml"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3030/alpe/nota-fiscal/upload-xml-listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"alpe",
+								"nota-fiscal",
+								"upload-xml-listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Nota Fiscal com XML",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXZpQGdtYWlsLmNvbSIsImV4cCI6MTcxNjEyNzM1OX0.uqmYoGtJz-pjhPKHrrsjumrZRiCO-jKneRiZEFWL2sakjL4arVITuKAPvZc4MVFMFe6i0qTxTa0CeAFj3PSJvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Davi/Desktop/Davi - backup/Desafio Alpe/XML/nota_fiscal_teste.xml"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3030/alpe/nota-fiscal/upload-xml",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"alpe",
+								"nota-fiscal",
+								"upload-xml"
 							]
 						}
 					},
