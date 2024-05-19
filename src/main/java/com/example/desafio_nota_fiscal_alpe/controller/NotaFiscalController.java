@@ -40,9 +40,15 @@ public class NotaFiscalController {
 		return notaFiscalServiceImpl.listarNotasFiscais();
 	}
 	
+	@GetMapping("/upload-xml-listar")
+	@ResponseStatus(HttpStatus.OK)
+	public Nfe listarNotaFiscalComXml(@RequestParam("file") MultipartFile file) {
+		return notaFiscalXmlService.listarNotaFiscalXml(file);
+	}
+	
 	@PostMapping("/upload-xml")
 	@ResponseStatus(HttpStatus.OK)
-	public Nfe salvarNotaFiscalComXml(@RequestParam("file") MultipartFile file) {
+	public NotaFiscalDTO salvarNotaFiscalComXml(@RequestParam("file") MultipartFile file) {
 		return notaFiscalXmlService.salvarNotaFiscalXml(file);
 	}
 
