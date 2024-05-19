@@ -72,7 +72,7 @@ Nessa segunda solução, será pressupondo que seja enviado um arquivo _**XML**_
 
 - Passo a Passo:
 
-1. Realizar o **login** conforme explicação acima e inserir o arquivo **XML** no seguinte endpoint _http://localhost:3030/alpe/nota-fiscal/upload-xml_ (arquivo **XML** anexado dentro da pasta _"postman->xml"_ no projeto).
+1. Realizar o **login** conforme explicação acima e inserir o arquivo **XML** no seguinte endpoint _http://localhost:3030/alpe/nota-fiscal/upload-xml_ (arquivo **XML** encontra-se anexado dentro da pasta _"postman->xml"_ no projeto).
 
 ![imagem9](./img_readme/img9.png)
 
@@ -81,6 +81,10 @@ Nessa segunda solução, será pressupondo que seja enviado um arquivo _**XML**_
 ![imagem10](./img_readme/img10.png)
 
 ![imagem11](./img_readme/img11.png)
+
+- **OBS**: O formato do arquivo **XML** segue o padrão que foi utilizado no teste (imagem abaixo), qualquer outro tipo de **XML** utilizado, irá apresentar erro.
+
+![imagem12](./img_readme/img12.png)
 
 ___
 ___
